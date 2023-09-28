@@ -29,6 +29,7 @@ footer{
 
 .imgcabecalho{
     width: 100%;
+    min-width: 300px;
     display: grid;
     place-items: center;
     border-radius: 0px;
@@ -83,6 +84,7 @@ footer{
 
 .imgfrente img{
     width: 100%;
+    min-width: 300px;
 }
 
 .imgfrente h1{
