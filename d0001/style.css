@@ -268,7 +268,6 @@ place-items: center;
 }
 
 .rodape ul{
-    color: red;
     list-style-type: none;
     display: flex;
     padding-inline: 20px;
