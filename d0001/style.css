@@ -9,6 +9,10 @@ body{
     width: 100%;
 }
 
+main{
+    width: 100%;
+}
+
 header{
     background: linear-gradient( to right, #181818, #cf0e0e, #181818);  
     box-shadow: 0px 0px 8px #49525281;
@@ -48,16 +52,23 @@ footer{
 }
 
 .menubar a{
-    color: rgb(253, 249, 249);
+    background: linear-gradient( to right, #cf0e0e23 0%, #941212 100%  );
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    background-size: 0px 0px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+    color: rgb(219, 219, 219);
     font-weight: bold;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
-    padding: 25px;
+    margin: 10px;
 }
 
 .menubar a:hover{
-    color: black;
-    text-transform: uppercase;
+    background-size: 100% 50px;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-shadow: 0px 0px 3px #495252;
 }
@@ -75,7 +86,6 @@ footer{
     margin-bottom: 10px;
     background: linear-gradient( to left, #222222, #353a3a, #222222);  
     box-shadow: 0px 0px 5px #495252;
-
 }
 
 .imgfrente{
@@ -260,6 +270,7 @@ place-items: center;
 .rodape ul{
     display: flex;
     padding-inline: 20px;
+    text-decoration: none;
 }
 
 .rodape li{
@@ -271,4 +282,29 @@ place-items: center;
 
 .rodape a{
     text-decoration: none;
+}
+
+#linkTop{
+    text-decoration: none;
+    color: #181818;
+    background-color: #800909;
+    border-radius: 7px;
+    padding: 8px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0px 0px 10px #444444;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #800909;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #44444434;
 }
