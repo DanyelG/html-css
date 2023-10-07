@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kanit:ital,wght@0,100;1,100;1,500&family=Roboto+Slab:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: #181818;
+}
+
+
+h1{
+    color: red;
+}
+
+h4{
+    color: green;
+}
+
+#cabecalho{
+    display: flex;
+    border-style: ridge;
+    border-color: red;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+#cabecalho a{
+    text-decoration: none;
+    margin-left: 95px;
+    padding-right: 15px;
+    padding-left: 55px;
+    font-family: 'kanit';
+    font-weight: bold;
+    color: silver;
+}
+
+#carro1{
+    height: 100vh;
+    background-color: #131313;
+    display: grid;
+    place-items: center;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
