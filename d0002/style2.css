@@ -11,17 +11,17 @@ body{
 
 
 header{
-  background-image: linear-gradient(to left, #323B3F, #23292D, #1B2024);
+  /*background-image: linear-gradient(to left, #323B3F, #23292D, #1B2024);*/
   margin: 15px;
   margin-top: 0px;
-  box-shadow: 0 0 10px 1px rgba(192, 192, 192, 0.137);
+  /*box-shadow: 0 0 10px 1px rgba(192, 192, 192, 0.137);*/
   border-radius: 6px;
   width: 195vh;
 }
 
 main{
   background-image: linear-gradient(-45deg, #323B3F, #23292D, #1B2024);
-  box-shadow: 0 0 10px 1px rgba(192, 192, 192, 0.137);
+  box-shadow: 0 0 10px 1px rgba(192, 192, 192, 0.075);
   display: block;
   border-radius: 6px;
   display: grid;
@@ -33,30 +33,26 @@ main{
   width: 195vh;
 }
 
-#bloco{
-  background-color: transparent;
+#menu{
+  background-image: linear-gradient(to left, #323B3F, #23292D, #1B2024);
+  box-shadow: 0 0 10px 1px rgba(192, 192, 192, 0.075);
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: flex-start;
   padding: 15px;
-  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .linksCabecalho a{
   text-decoration: none;
-  margin-left: 155px;
-  padding-right: 15px;
-  padding-left: 55px;
   font-family: 'kanit';
   font-weight: bold;
   color: silver;
+  padding-inline: 45px;
 }
 
-.logo{
-  display: flex;
-}
 
 /* ----------------------- */
 
@@ -397,4 +393,3 @@ text-shadow: 0px 3px 15px #2680E0;
     opacity: 1;
     transform: translateY(0);
   }
-

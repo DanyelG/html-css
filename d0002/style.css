@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kanit:ital,wght@0,100;1,100;1,500&family=Roboto+Slab:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap');
 
 body{
     background-color: black;
@@ -24,8 +24,10 @@ body{
     align-items: center;
     margin-top: 195px;
     font-size: 3.5vh;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 300;
+    font-family: 'kanit';
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-style: italic;
 }
 
 .botao{
@@ -46,8 +48,7 @@ button{
     text-decoration: none;
     transition: background-size .2s;
     color: rgb(219, 219, 219);
-    font-weight: bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'kanit';
     text-decoration: none;
     height: 35px;
     border: transparent;
@@ -60,4 +61,5 @@ button:hover{
     font-weight: bold;
     text-shadow: 0px 0px 2px #525a5a;
     border-radius: 3px;
+    font-family: 'kanit';
 }
