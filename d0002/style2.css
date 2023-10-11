@@ -1,51 +1,400 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kanit:ital,wght@0,100;1,100;1,500&family=Roboto+Slab:wght@300;400&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap');
 
 body{
-    background-color: #181818;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #181C20;
+  background-image: linear-gradient(-45deg, #323B3F, #23292D, #181C20);
 }
 
 
-h1{
-    color: red;
+header{
+  background-image: linear-gradient(to left, #323B3F, #23292D, #1B2024);
+  margin: 15px;
+  margin-top: 0px;
+  box-shadow: 0 0 10px 1px rgba(192, 192, 192, 0.137);
+  border-radius: 6px;
+  width: 195vh;
 }
 
-h4{
-    color: green;
+main{
+  background-image: linear-gradient(-45deg, #323B3F, #23292D, #1B2024);
+  box-shadow: 0 0 10px 1px rgba(192, 192, 192, 0.137);
+  display: block;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 15px;
+  margin-top: 0px;
+  width: 195vh;
 }
 
-#cabecalho{
-    display: flex;
-    border-style: ridge;
-    border-color: red;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
+#bloco{
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  margin: 20px;
 }
 
-
-
-#cabecalho a{
-    text-decoration: none;
-    margin-left: 95px;
-    padding-right: 15px;
-    padding-left: 55px;
-    font-family: 'kanit';
-    font-weight: bold;
-    color: silver;
+.linksCabecalho a{
+  text-decoration: none;
+  margin-left: 155px;
+  padding-right: 15px;
+  padding-left: 55px;
+  font-family: 'kanit';
+  font-weight: bold;
+  color: silver;
 }
+
+.logo{
+  display: flex;
+}
+
+/* ----------------------- */
+
+/* #cf0e0e */
 
 #carro1{
-    height: 100vh;
-    background-color: #131313;
-    display: grid;
-    place-items: center;
-    font-family: "Inter", sans-serif;
-    color: white;
+  margin-right: 45%;
+  padding: 35px;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  font-family: "Kanit", sans-serif;
+  height: 300px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
 }
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card a{
+  display: flex;
+  align-items: center;
+   color: rgb(219, 219, 219);
+  text-decoration: none;
+  font-size: 3.5vh;
+  font-weight: 300;
+  margin-left: 10%;
+  font-family: 'Kanit', sans-serif;
+  font-style: italic;
+}
+
+.card a:hover{
+  text-shadow: 0px 3px 15px #cf0e0e;
+}
+
+.card img{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+  .card:hover img {
+    filter: grayscale(1) brightness(0.4);
+  }
+  .card:hover::after {
+    opacity: 1;
+    inset: 20px;
+  }
+
+  .content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .content h3,
+  .content p {
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+  }
+
+  .content h3 {
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    scale: 0.7;
+  }
+
+  .content p {
+    font-size: 15px;
+    color: #a5a5a5;
+    text-shadow: 0 0 30px #cf0e0eb4;
+    transform: translateY(50%);
+  }
+  
+  .card:hover .content h3 {
+    scale: 1;
+    opacity: 1;
+  }
+
+  .card:hover .content p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+/*-------------------------------------*/
+
+
+/* #728393 */
+
+#carro2{
+    margin-left: 45%;
+    padding:35px;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    font-family: 'Kanit', sans-serif;
+    height: 300px;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.card2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.card2 a{
+  display: flex;
+  align-items: center;
+  color: rgb(219, 219, 219);
+  text-decoration: none;
+  font-size: 3.5vh;
+  font-weight: 300;
+  margin-right: 10%;
+  font-family: 'Kanit', sans-serif;
+  font-style: italic;
+}
+
+.card2 a:hover{
+text-shadow: 0px 3px 15px #728393;
+}
+
+.card2 img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+}
+
+.card2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+  }
+
+  .card2:hover img {
+    filter: grayscale(1) brightness(0.4);
+  }
+  .card2:hover::after {
+    opacity: 1;
+    inset: 20px;
+  }
+
+  .content2 {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .content2 h3,
+  .content2 p {
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+  }
+
+  .content2 h3 {
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    scale: 0.7;
+  }
+
+  .content2 p {
+    font-size: 15px;
+    color: #a5a5a5;
+    text-shadow: 0 0 30px #87939ea6;
+    transform: translateY(50%);
+  }
+
+  .card2:hover .content2 h3 {
+    scale: 1;
+    opacity: 1;
+  }
+
+  .card2:hover .content2 p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+/*------------------------------------*/
+
+/* #2680E0 */
+
+#carro3{
+  margin-right: 45%;
+  padding: 35px;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  font-family: "Kanit", sans-serif;
+  height: 300px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+
+}
+
+.card3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.card3 a{
+  display: flex;
+  align-items: center;
+  color: rgb(219, 219, 219);
+  text-decoration: none;
+  font-size: 3.5vh;
+  font-weight: 300;
+  margin-left: 10%;
+  font-family: 'Kanit', sans-serif;
+  font-style: italic;
+}
+
+.card3 a:hover{
+text-shadow: 0px 3px 15px #2680E0;
+}
+
+.card3 img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.card3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+  .card3:hover img {
+    filter: grayscale(1) brightness(0.4);
+  }
+  .card3:hover::after {
+    opacity: 1;
+    inset: 20px;
+  }
+
+  .content3 {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .content3 h3,
+  .content3 p {
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+  }
+
+  .content3 h3 {
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    scale: 0.7;
+  }
+
+  .content3 p {
+    font-size: 15px;
+    color: #a5a5a5;
+    text-shadow: 0 0 30px #2680e09f;
+    transform: translateY(50%);
+  }
+  
+  .card3:hover .content3 h3 {
+    scale: 1;
+    opacity: 1;
+  }
+
+  .card3:hover .content3 p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
