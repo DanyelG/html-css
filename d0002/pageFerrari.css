@@ -10,7 +10,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header{
@@ -75,10 +75,22 @@ main{
 
 #container{
   display: flex;
-
+  margin: 18px;
 }
 
 .imgCima{
+  
   display: flex;
   flex-direction: row;
+}
+
+.imgCima p {
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgCima p:hover{
+  transition: width 2s, height 2s, transform 2s;
 }
