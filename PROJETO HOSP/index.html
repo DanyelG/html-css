@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOC</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="shortcut icon" href="./imagens/HOC.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!--
+                <li>
+                    <a href="">
+                        <img src="./public/assets/HOC.webp" alt="" height="42px">
+                    </a>
+                </li>
+                -->
+                <li>INICIO</li>
+                <li>A CLINICA</li>
+                <li>EQUIPE</li>
+                <li>DR. FABIO MORANDO</li>
+                <li>EXAMES</li>
+                <li>ESPECIALIDADES</li>
+                <li>CONTATO</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section><!--
+            <img class="logo" src="./public/assets/HOC.webp" alt="" height="150px" width="150px">
+            <h1>HOSPITAL DE OLHOS</h1>
+            <h2>CARANGOLA</h2>
+            <img class="fundo" src="./public/assets/fachadacop.jpg" alt="">
+            <p>HÁ 15 ANOS CUIDANDO DA VISÃO E DE PESSOAS</p>
+            -->
+            <img class="fundo" src="./public/assets/fachadacop.jpg" alt="">
+            <img src="./public/assets/hospital ref.webp" alt="" height="150px">
+        </section>
+        <span class="interesse">
+            <p>Você pode se interessar por</p>
+        </span>
+        <section id="posts">
+            <div class="card1">
+                <div class="cardImage">
+                    <a href="https://www.instagram.com/hospitaldeolhosdecarangola/" target="_blank">
+                    <img src="./public/postcards/miopia.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cardText">
+                    <h3>O QUE É MIOPIA?</h3>
+                    <p>Resumidamente miopia é um erro bastante comum em que os olhos podem ver nitidamente de perto, mas não
+                    são capazes de enxergar claramente os objetos que estão longe.
+                    </p>
+                    <br>
+                    <p>Ficou curioso e quer saber mais? Clique na imagem e acesse nosso Instagram!</p>
+                </div>
+            </div>
+
+            <!--CARD 2 (SLIDE)-->
+            <!--
+            <div class="card2">
+
+                <div class="galeria-total">
+                    
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio1">
+
+                    <div class="galeria">
+                        <img src="./public/postcards/CERATOCONE-.jpg" alt="" class="item item-atual">
+                        <img src="./public/postcards/CIRURGIA-CATARATA.jpg" alt="" class="item item-atual">
+                        <img src="./public/postcards/CIRURGIA-REFRATIVA.jpg" alt="" class="item item-atual">
+                    </div>
+                
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>                
+
+
+                <div class="cardText">
+                    <h3>SOMOS ESPECIALISTAS!</h3>
+                    <p>Conheça algumas de nossas especialidades oftalmológicas</p>
+                    <br>
+                    <p>Agende sua consulta, cuidamos da visão e de pessoas!</p>
+                </div>
+
+            </div>
+            
+            </div>
+
+            CARD 2 (SLIDE)-->
+
+            <div class="slider">
+                <div class="slides">
+
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    
+                    <div class="slide first">
+                        <img src="./public/postcards/CERATOCONE-.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./public/postcards/CIRURGIA-REFRATIVA.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./public/postcards/CIRURGIA-CATARATA.jpg" alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+
+            </div>
+
+
+            <div class="card3">
+                <div class="cardImage">
+                    <img src="./public/postcards/Cuidado-visao.jpg" alt="">
+                </div>
+                <div class="cardText">
+                    <h3>VOCÊ TEM SE CUIDADO?</h3>
+                    <p>Já foi a um oftalmologista este ano?
+                        A consulta não se resume em apenas ver o grau dos olhos ou se você tem ou não que usar óculos.                        
+                    </p>
+                    <br>
+                    <p>Entre em contao por um de nossos números de telefone e agende sua consulta!</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
