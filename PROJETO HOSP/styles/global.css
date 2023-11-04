@@ -16,6 +16,15 @@ header{
     padding: 18px 0px;
 }
 
+header a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header a:hover{
+    color: #000;
+}
+
 header nav ul{
     margin: 0 auto;
     width: fit-content;
@@ -309,7 +318,6 @@ main .parceiros{
     padding-top: 15px;
     height: 102px;
 }
-
 
 footer .slogan{
     background-color: var(--bg-card);

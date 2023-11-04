@@ -1,0 +1,31 @@
+:root{
+    --bg-primary: #1E2E6C;
+    --text-color: #ffffff;
+    --bg-card: #023367;
+    --btn-border: #023059;
+    --btn-interno: #D7D920;
+}
+
+.titulo{
+    margin: 35px;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+    
+    align-items: center;
+}
+
+.apresentacao p{
+    display: flex;
+    padding-inline: 35px;
+    height: 100%;
+    width: 55%;
+}
+
+.apresentacao img{
+    height: 350px;
+    max-width: 45%;
+}
